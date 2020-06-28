@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<style type="text/css">
+	body
+	{
+		font-family: 'Gill Sans', sans-serif;
+		background: black;
+	}
+	.topbar
+	{
+		background-color: green;
+		height: 50px;
+		width: 1440px;
+		margin-top: -45px;
+	}
+	h3
+	{
+		font-weight: normal;
+		font-size: 45px
+	}
+	.centered
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	h1
+	{
+		text-align: center;
+		font-size: 60px;
+		font-weight: normal;
+	}
+	h2
+	{
+		font-size: 40px;
+		font-weight: normal;
+		color: white;
+	}
+	h4
+	{
+		color: orange;
+		margin-top: -80px;
+		word-wrap: break-word;
+	}
+	input
+	{
+		width: 100%;
+	}
+	button
+	{
+		background: black;
+		color: orange;
+		border: none;
+		margin-top: 10px;
+		width: 30%;
+		font-size: 20px;
+	}
+</style>
+
+<html lang = "en-US">
+<body>
+	<div>
+		<img src="image.jpeg" style="width: 1440px; height: 350px; margin-left: -6px">
+	</div>
+	<br>
+	<div>
+		<h1 style="color: orange;">Welcome Back,</h1>
+		<h1 style="color: white; margin-top: -30px;" id="username"></h1>
+	</div>
+
+	<div style="display: flex;">
+		<div class="centered">
+			<h2>Your Orders</h2>
+			<h4 id="orders"></h4>
+		</div>
+		<div class="centered">
+			<h2>Place New Order</h2>
+			<h4 style="margin-top: -10px">Put in the url of the product you want to track here!</h4>
+			<input type="url" name="test" id="url">
+			<button class="centered" id="button">Submit!</button>
+		</div>
+	</div>
+
+	<script src="dashboard.js"></script>
+</body>
+</html>
